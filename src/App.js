@@ -1,12 +1,19 @@
 import { Footer, Header,Content } from './func-components';
+import React from 'react';
+import Calendar from './class-components';
 import logo from './logo.svg';
 //import './style.css';
 
 function App() {
-  return (
-    [<Header/>,<Content/>,<Footer/>]
+  return <>
+    <Header/>
+    <p><center><Calendar/></center></p>
+    <Content/>
+    <Footer/>
+  </>
+    
 
-  )
+  
     
     
 }
