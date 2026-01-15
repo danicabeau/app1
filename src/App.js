@@ -6,10 +6,14 @@ import Button from './class-components';
 import { Calculator2 } from './calculator';
 import { EventData1 } from './event-data';
 import RefsArray from './refs-array';
-//import './style.css';
+import MessageBox from './state-func';
 export default function App(){
-  return <RefsArray/>
+  return <MessageBox/>
 }
+//import './style.css';
+//export default function App(){
+//  return <RefsArray/>
+//}
 //export default function App(){
 //  return<EventData1/>
 //}
