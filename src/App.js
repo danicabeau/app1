@@ -1,6 +1,7 @@
 import { Footer, Header,Content } from './func-components';
 import React from 'react';
-import Context from './context-content';
+import Content2 from './context-content2';
+import Header2 from './context-header2';
 import {userContext} from './context';
 
 import logo from './logo.svg';
@@ -10,9 +11,13 @@ import { EventData1 } from './event-data';
 import RefsArray from './refs-array';
 import MessageBox from './state-func';
 export default function App(){
+  const [user, setUser] = React.useState('');
+
+
   return (
-    <userContext.Provider value={'Tom Jerry'}>
-    <Context/>
+    <userContext.Provider value={{user,setUser}}>
+    <Header2/>
+    <Content2/>
     </userContext.Provider>
   )
 }
