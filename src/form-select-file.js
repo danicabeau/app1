@@ -1,5 +1,4 @@
 import React from 'react';
-
 export default function App() {
     
     const inputFile = React.useRef();
@@ -23,7 +22,7 @@ export default function App() {
         
         for (let f of inputFile.current.files) {
             if (f.size > maxSize * 1000) {
-                alert(`ขนาดไฟล์เกินกว่าที่กำหนด (${maxSize} KB)`);
+                alert(`ขนาดของแต่ละไฟล์ต้องไม่เกิน (${maxSize} KB)`);
                 return;
             }
         }
